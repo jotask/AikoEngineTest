@@ -41,7 +41,8 @@ project "aiko"
 	cppdialect "C++14"
 	exceptionhandling "Off"
 	rtti "Off"
-	files { "aiko/*.cpp", "aiko/*.hpp" }
+	
+	files { "aiko/**.cpp", "aiko/**.hpp", "aiko/**.h" }
 	includedirs
 	{
 		path.join(BGFX_DIR, "include"),
