@@ -10,3 +10,6 @@
 [submodule "bgfx"]
 	path = bgfx
 	url = https://github.com/bkaradzic/bgfx/
+[submodule "enet-plus"]
+	path = enet-plus
+	url = https://github.com/xairy/enet-plus.git
