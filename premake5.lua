@@ -9,7 +9,7 @@ local GLFW_DIR = "glfw"
 
 solution "bgfx-minimal-example"
 	location(BUILD_DIR)
-	startproject "helloworld"
+	startproject "aiko"
 	configurations { "Release", "Debug" }
 	if os.is64bit() and not os.istarget("windows") then
 		platforms "x86_64"
@@ -35,6 +35,26 @@ function setBxCompat()
 		includedirs { path.join(BX_DIR, "include/compat/mingw") }
 end
 	
+project "aiko"
+	kind "ConsoleApp"
+	language "C++"
+	cppdialect "C++14"
+	exceptionhandling "Off"
+	rtti "Off"
+	files { "aiko/*.cpp", "aiko/*.hpp" }
+	includedirs
+	{
+		path.join(BGFX_DIR, "include"),
+		path.join(BX_DIR, "include"),
+		path.join(GLFW_DIR, "include")
+	}
+	links { "bgfx", "bimg", "bx", "glfw" }
+	filter "system:windows"
+		links { "gdi32", "kernel32", "psapi" }
+	filter "system:linux"
+		links { "dl", "GL", "pthread", "X11" }
+	setBxCompat()
+
 project "helloworld"
 	kind "ConsoleApp"
 	language "C++"
