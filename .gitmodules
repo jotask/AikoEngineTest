@@ -6,10 +6,10 @@
 	url = https://github.com/bkaradzic/bx
 [submodule "bimg"]
 	path = bimg
-	url = https://github.com/bkaradzic/bimg/
+	url = https://github.com/bkaradzic/bimg
 [submodule "bgfx"]
 	path = bgfx
-	url = https://github.com/bkaradzic/bgfx/
+	url = https://github.com/bkaradzic/bgfx
 [submodule "enet-plus"]
 	path = enet-plus
 	url = https://github.com/xairy/enet-plus.git
