@@ -16,3 +16,6 @@
 [submodule "submodules/submodules/glm"]
 	path = submodules/submodules/glm
 	url = https://github.com/g-truc/glm
+[submodule "submodules/glm"]
+	path = submodules/glm
+	url = https://github.com/g-truc/glm
