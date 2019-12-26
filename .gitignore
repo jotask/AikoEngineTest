@@ -1,1 +1,12 @@
 build
+*.ilk
+*.lib
+*.pdb
+*.user
+*.log
+*.exp
+*.exe
+*.idb
+*.tlog
+*.obj
+*.vcxproj
