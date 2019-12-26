@@ -42,7 +42,7 @@ project "aiko"
 	location "aiko"
 	kind "ConsoleApp"
 	language "C++"
-	cppdialect "C++14"
+	cppdialect "C++17"
 	exceptionhandling "Off"
 	rtti "Off"
 	
