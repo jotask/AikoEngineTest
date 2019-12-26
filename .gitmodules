@@ -1,15 +1,18 @@
-[submodule "glfw"]
-	path = glfw
+[submodule "submodules/glfw"]
+	path = submodules/glfw
 	url = https://github.com/glfw/glfw
-[submodule "bx"]
-	path = bx
+[submodule "submodules/bx"]
+	path = submodules/bx
 	url = https://github.com/bkaradzic/bx
-[submodule "bimg"]
-	path = bimg
+[submodule "submodules/bimg"]
+	path = submodules/bimg
 	url = https://github.com/bkaradzic/bimg
-[submodule "bgfx"]
-	path = bgfx
+[submodule "submodules/bgfx"]
+	path = submodules/bgfx
 	url = https://github.com/bkaradzic/bgfx
-[submodule "enet-plus"]
-	path = enet-plus
+[submodule "submodules/enet-plus"]
+	path = submodules/enet-plus
 	url = https://github.com/xairy/enet-plus.git
+[submodule "submodules/submodules/glm"]
+	path = submodules/submodules/glm
+	url = https://github.com/g-truc/glm
