@@ -8,6 +8,8 @@ local BX_DIR = "submodules/bx"
 local GLFW_DIR = "submodules/glfw"
 local GLM_DIR = "submodules/glm"
 
+local outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
 solution "bgfx-minimal-example"
 	location(BUILD_DIR)
 	startproject "aiko"
@@ -44,6 +46,9 @@ project "aiko"
 	exceptionhandling "Off"
 	rtti "Off"
 	
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
 	files { "aiko/**.cpp", "aiko/**.hpp", "aiko/**.h" }
 	includedirs
 	{
@@ -67,6 +72,10 @@ project "bgfx"
 	exceptionhandling "Off"
 	rtti "Off"
 	defines "__STDC_FORMAT_MACROS"
+
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
 	files
 	{
 		path.join(BGFX_DIR, "include/bgfx/**.h"),
@@ -103,6 +112,10 @@ project "bimg"
 	cppdialect "C++14"
 	exceptionhandling "Off"
 	rtti "Off"
+
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
 	files
 	{
 		path.join(BIMG_DIR, "include/bimg/*.h"),
@@ -127,6 +140,10 @@ project "bx"
 	exceptionhandling "Off"
 	rtti "Off"
 	defines "__STDC_FORMAT_MACROS"
+
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
 	files
 	{
 		path.join(BX_DIR, "include/bx/*.h"),
@@ -150,6 +167,10 @@ project "bx"
 project "glfw"
 	kind "StaticLib"
 	language "C"
+
+	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
 	files
 	{
 		path.join(GLFW_DIR, "include/GLFW/*.h"),
