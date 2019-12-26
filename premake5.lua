@@ -36,6 +36,7 @@ function setBxCompat()
 end
 	
 project "aiko"
+	location "aiko"
 	kind "ConsoleApp"
 	language "C++"
 	cppdialect "C++14"
@@ -45,6 +46,7 @@ project "aiko"
 	files { "aiko/**.cpp", "aiko/**.hpp", "aiko/**.h" }
 	includedirs
 	{
+		"%{prj.location}",
 		path.join(BGFX_DIR, "include"),
 		path.join(BX_DIR, "include"),
 		path.join(GLFW_DIR, "include")
