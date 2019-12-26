@@ -2,10 +2,10 @@ local BUILD_DIR = path.join("build", _ACTION)
 if _OPTIONS["cc"] ~= nil then
 	BUILD_DIR = BUILD_DIR .. "_" .. _OPTIONS["cc"]
 end
-local BGFX_DIR = "bgfx"
-local BIMG_DIR = "bimg"
-local BX_DIR = "bx"
-local GLFW_DIR = "glfw"
+local BGFX_DIR = "submodules/bgfx"
+local BIMG_DIR = "submodules/bimg"
+local BX_DIR = "submodules/bx"
+local GLFW_DIR = "submodules/glfw"
 
 solution "bgfx-minimal-example"
 	location(BUILD_DIR)
