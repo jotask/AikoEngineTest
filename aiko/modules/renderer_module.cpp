@@ -105,8 +105,8 @@ namespace aiko
         init.resolution.width = (uint32_t)width;
         init.resolution.height = (uint32_t)height;
         init.resolution.reset = BGFX_RESET_VSYNC;
-        if (!bgfx::init(init))
-            return 1;
+        if (bgfx::init(init) == false)
+            return false;
         // Set view 0 to the same dimensions as the window and to clear the color buffer.
         const bgfx::ViewId kClearView = 0;
         bgfx::setViewClear(kClearView, BGFX_CLEAR_COLOR);
