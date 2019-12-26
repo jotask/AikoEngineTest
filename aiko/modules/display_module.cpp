@@ -37,14 +37,6 @@ namespace aiko
             fprintf(stderr, "GLFW error %d: %s\n", error, description);
         };
 
-        auto glfw_keyCallback = [](GLFWwindow *window, int key, int scancode, int action, int mods)
-        {
-            if (key == GLFW_KEY_F1 && action == GLFW_RELEASE)
-            {
-                Renderer::s_showStats = !Renderer::s_showStats;
-            }
-        };
-
         // Create a GLFW window without an OpenGL context.
         glfwSetErrorCallback(glfw_errorCallback);
         if (!glfwInit())
@@ -55,8 +47,6 @@ namespace aiko
         {
             return false;
         }
-
-        glfwSetKeyCallback(m_window, glfw_keyCallback);
 
 		// Init GLFW
 		// glfwInit();

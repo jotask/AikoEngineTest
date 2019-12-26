@@ -4,6 +4,7 @@
 #include "modules/module_connector.hpp"
 #include "event/engine_events.hpp"
 #include "event/event_dispatcher.hpp"
+#include "modules/renderer_module.hpp"
 
 namespace aiko
 {
@@ -24,6 +25,18 @@ namespace aiko
     {
         EventSystem::it().bind<OnKeyPressedEvent>(this, &Input::onKeyEventHandler);
         EventSystem::it().bind<OnMouseMoveEvent>(this, &Input::onMouseMoveHandler);
+
+        auto glfw_keyCallback = [](GLFWwindow *window, int key, int scancode, int action, int mods)
+        {
+            if (key == GLFW_KEY_F1 && action == GLFW_RELEASE)
+            {
+                Renderer::s_showStats = !Renderer::s_showStats;
+            }
+        };
+
+        auto* window = m_display->getWindow();
+        glfwSetKeyCallback(window, glfw_keyCallback);
+
         return true;
     }
 
