@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{665E880B-D267-887C-5BE3-9E7CC7EB937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{7B6CE4F6-670E-0FCD-50C9-22213C0A961D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event">
+      <UniqueIdentifier>{071C650F-7330-8DC0-3CB2-3020A88589F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules">
+      <UniqueIdentifier>{FEAC8BD4-6A8C-0A70-73A4-9546DF0271D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{9C5CB11B-88FE-DBF1-71B9-EF455DFA6242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="systems">
+      <UniqueIdentifier>{3D76CBBA-A955-4A56-B26D-D52C1ECCB0B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="systems\assets">
+      <UniqueIdentifier>{9FCAD1F8-8B98-C5FE-742C-36256099A163}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="systems\camera">
+      <UniqueIdentifier>{351833FC-21E6-2602-0A7A-9728F6E60267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="systems\camera\behaviour">
+      <UniqueIdentifier>{095D2F21-F581-7EA1-1ECD-63310A517DBF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="systems\entity">
+      <UniqueIdentifier>{0990CC01-F55D-C007-DEF1-302ECA5E9C6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="systems\entity\components">
+      <UniqueIdentifier>{9EE1DF45-0AA4-13D0-5354-A25CBF55ECAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="systems\renderer">
+      <UniqueIdentifier>{A3AA5AE3-8FA3-7935-B8D5-5EBAA42D5941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="systems\world">
+      <UniqueIdentifier>{D41AF78C-40DB-72C3-0916-BC407595B79F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\app.hpp">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="config\config.hpp">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="engine.hpp" />
+    <ClInclude Include="event\engine_events.hpp">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\event.hpp">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="event\event_dispatcher.hpp">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\display_module.hpp">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\input_module.hpp">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\log_module.hpp">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\module.hpp">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\module_connector.hpp">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\renderer_module.hpp">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="sandbox.hpp" />
+    <ClInclude Include="shared\singleton.hpp">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\timestep.hpp">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\transform.hpp">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\types.hpp">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="shared\utils.hpp">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\assets\asset.hpp">
+      <Filter>systems\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\assets\asset_system.hpp">
+      <Filter>systems\assets</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\camera\behaviour\behaviour.hpp">
+      <Filter>systems\camera\behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\camera\behaviour\behaviour_types.hpp">
+      <Filter>systems\camera\behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\camera\behaviour\dev_behaviour.hpp">
+      <Filter>systems\camera\behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\camera\behaviour\fps_behaviour.hpp">
+      <Filter>systems\camera\behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\camera\behaviour\orbital_behaviour.hpp">
+      <Filter>systems\camera\behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\camera\camera.hpp">
+      <Filter>systems\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\camera\camera_system.hpp">
+      <Filter>systems\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\entity\components\component.hpp">
+      <Filter>systems\entity\components</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\entity\components\mesh.hpp">
+      <Filter>systems\entity\components</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\entity\entity.hpp">
+      <Filter>systems\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\entity\entity_system.hpp">
+      <Filter>systems\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\entity\light.hpp">
+      <Filter>systems\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\renderer\model.hpp">
+      <Filter>systems\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\renderer\renderer_system.hpp">
+      <Filter>systems\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\renderer\shader.hpp">
+      <Filter>systems\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\renderer\shader_manager.hpp">
+      <Filter>systems\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\renderer\shader_type.hpp">
+      <Filter>systems\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\renderer\vertex.hpp">
+      <Filter>systems\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\system.hpp">
+      <Filter>systems</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\system_connector.hpp">
+      <Filter>systems</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\world\world_system.hpp">
+      <Filter>systems\world</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aiko.cpp" />
+    <ClCompile Include="app\app.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="config\config.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="engine.cpp" />
+    <ClCompile Include="modules\display_module.cpp">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\input_module.cpp">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\log_module.cpp">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="modules\renderer_module.cpp">
+      <Filter>modules</Filter>
+    </ClCompile>
+    <ClCompile Include="sandbox.cpp" />
+    <ClCompile Include="shared\timestep.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="shared\transform.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="shared\types.cpp">
+      <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\assets\asset.cpp">
+      <Filter>systems\assets</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\assets\asset_system.cpp">
+      <Filter>systems\assets</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\camera\behaviour\behaviour.cpp">
+      <Filter>systems\camera\behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\camera\behaviour\dev_behaviour.cpp">
+      <Filter>systems\camera\behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\camera\behaviour\fps_behaviour.cpp">
+      <Filter>systems\camera\behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\camera\behaviour\orbital_behaviour.cpp">
+      <Filter>systems\camera\behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\camera\camera.cpp">
+      <Filter>systems\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\camera\camera_system.cpp">
+      <Filter>systems\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\entity\components\component.cpp">
+      <Filter>systems\entity\components</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\entity\components\mesh.cpp">
+      <Filter>systems\entity\components</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\entity\entity.cpp">
+      <Filter>systems\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\entity\entity_system.cpp">
+      <Filter>systems\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\entity\light.cpp">
+      <Filter>systems\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\renderer\model.cpp">
+      <Filter>systems\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\renderer\renderer_system.cpp">
+      <Filter>systems\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\renderer\shader.cpp">
+      <Filter>systems\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\renderer\shader_manager.cpp">
+      <Filter>systems\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\world\world_system.cpp">
+      <Filter>systems\world</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

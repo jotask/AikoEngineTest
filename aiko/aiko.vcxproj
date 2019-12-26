@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{290D947C-1544-950D-BE30-7B10AA46110F}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>aiko</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\Release-windows-x86\aiko\</OutDir>
+    <IntDir>..\bin-int\Release-windows-x86\aiko\</IntDir>
+    <TargetName>aiko</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin\Release-windows-x86_64\aiko\</OutDir>
+    <IntDir>..\bin-int\Release-windows-x86_64\aiko\</IntDir>
+    <TargetName>aiko</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin\Debug-windows-x86\aiko\</OutDir>
+    <IntDir>..\bin-int\Debug-windows-x86\aiko\</IntDir>
+    <TargetName>aiko</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin\Debug-windows-x86_64\aiko\</OutDir>
+    <IntDir>..\bin-int\Debug-windows-x86_64\aiko\</IntDir>
+    <TargetName>aiko</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\submodules\bgfx\include;..\submodules\bx\include;..\submodules\glfw\include;..\submodules\glm\glm;..\submodules\bx\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>gdi32.lib;kernel32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\submodules\bgfx\include;..\submodules\bx\include;..\submodules\glfw\include;..\submodules\glm\glm;..\submodules\bx\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>gdi32.lib;kernel32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\submodules\bgfx\include;..\submodules\bx\include;..\submodules\glfw\include;..\submodules\glm\glm;..\submodules\bx\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>gdi32.lib;kernel32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\submodules\bgfx\include;..\submodules\bx\include;..\submodules\glfw\include;..\submodules\glm\glm;..\submodules\bx\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>gdi32.lib;kernel32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="app\app.hpp" />
+    <ClInclude Include="config\config.hpp" />
+    <ClInclude Include="engine.hpp" />
+    <ClInclude Include="event\engine_events.hpp" />
+    <ClInclude Include="event\event.hpp" />
+    <ClInclude Include="event\event_dispatcher.hpp" />
+    <ClInclude Include="modules\display_module.hpp" />
+    <ClInclude Include="modules\input_module.hpp" />
+    <ClInclude Include="modules\log_module.hpp" />
+    <ClInclude Include="modules\module.hpp" />
+    <ClInclude Include="modules\module_connector.hpp" />
+    <ClInclude Include="modules\renderer_module.hpp" />
+    <ClInclude Include="sandbox.hpp" />
+    <ClInclude Include="shared\singleton.hpp" />
+    <ClInclude Include="shared\timestep.hpp" />
+    <ClInclude Include="shared\transform.hpp" />
+    <ClInclude Include="shared\types.hpp" />
+    <ClInclude Include="shared\utils.hpp" />
+    <ClInclude Include="systems\assets\asset.hpp" />
+    <ClInclude Include="systems\assets\asset_system.hpp" />
+    <ClInclude Include="systems\camera\behaviour\behaviour.hpp" />
+    <ClInclude Include="systems\camera\behaviour\behaviour_types.hpp" />
+    <ClInclude Include="systems\camera\behaviour\dev_behaviour.hpp" />
+    <ClInclude Include="systems\camera\behaviour\fps_behaviour.hpp" />
+    <ClInclude Include="systems\camera\behaviour\orbital_behaviour.hpp" />
+    <ClInclude Include="systems\camera\camera.hpp" />
+    <ClInclude Include="systems\camera\camera_system.hpp" />
+    <ClInclude Include="systems\entity\components\component.hpp" />
+    <ClInclude Include="systems\entity\components\mesh.hpp" />
+    <ClInclude Include="systems\entity\entity.hpp" />
+    <ClInclude Include="systems\entity\entity_system.hpp" />
+    <ClInclude Include="systems\entity\light.hpp" />
+    <ClInclude Include="systems\renderer\model.hpp" />
+    <ClInclude Include="systems\renderer\renderer_system.hpp" />
+    <ClInclude Include="systems\renderer\shader.hpp" />
+    <ClInclude Include="systems\renderer\shader_manager.hpp" />
+    <ClInclude Include="systems\renderer\shader_type.hpp" />
+    <ClInclude Include="systems\renderer\vertex.hpp" />
+    <ClInclude Include="systems\system.hpp" />
+    <ClInclude Include="systems\system_connector.hpp" />
+    <ClInclude Include="systems\world\world_system.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aiko.cpp" />
+    <ClCompile Include="app\app.cpp" />
+    <ClCompile Include="config\config.cpp" />
+    <ClCompile Include="engine.cpp" />
+    <ClCompile Include="modules\display_module.cpp" />
+    <ClCompile Include="modules\input_module.cpp" />
+    <ClCompile Include="modules\log_module.cpp" />
+    <ClCompile Include="modules\renderer_module.cpp" />
+    <ClCompile Include="sandbox.cpp" />
+    <ClCompile Include="shared\timestep.cpp" />
+    <ClCompile Include="shared\transform.cpp" />
+    <ClCompile Include="shared\types.cpp" />
+    <ClCompile Include="systems\assets\asset.cpp" />
+    <ClCompile Include="systems\assets\asset_system.cpp" />
+    <ClCompile Include="systems\camera\behaviour\behaviour.cpp" />
+    <ClCompile Include="systems\camera\behaviour\dev_behaviour.cpp" />
+    <ClCompile Include="systems\camera\behaviour\fps_behaviour.cpp" />
+    <ClCompile Include="systems\camera\behaviour\orbital_behaviour.cpp" />
+    <ClCompile Include="systems\camera\camera.cpp" />
+    <ClCompile Include="systems\camera\camera_system.cpp" />
+    <ClCompile Include="systems\entity\components\component.cpp" />
+    <ClCompile Include="systems\entity\components\mesh.cpp" />
+    <ClCompile Include="systems\entity\entity.cpp" />
+    <ClCompile Include="systems\entity\entity_system.cpp" />
+    <ClCompile Include="systems\entity\light.cpp" />
+    <ClCompile Include="systems\renderer\model.cpp" />
+    <ClCompile Include="systems\renderer\renderer_system.cpp" />
+    <ClCompile Include="systems\renderer\shader.cpp" />
+    <ClCompile Include="systems\renderer\shader_manager.cpp" />
+    <ClCompile Include="systems\world\world_system.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\build\vs2017\bgfx.vcxproj">
+      <Project>{6C90947C-58C7-950D-01B4-7B10EDC9110F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\build\vs2017\bimg.vcxproj">
+      <Project>{C499947C-B0D0-950D-59BD-7B1045D3110F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\build\vs2017\bx.vcxproj">
+      <Project>{5F775900-4B03-880B-B4B1-880BA05C880B}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\build\vs2017\glfw.vcxproj">
+      <Project>{9563977C-819A-980D-2A87-7E10169D140F}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
