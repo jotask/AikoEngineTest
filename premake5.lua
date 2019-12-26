@@ -44,7 +44,7 @@ project "aiko"
 	language "C++"
 	cppdialect "C++17"
 	exceptionhandling "Off"
-	rtti "Off"
+	rtti "On"
 	
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
