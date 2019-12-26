@@ -6,6 +6,7 @@ local BGFX_DIR = "submodules/bgfx"
 local BIMG_DIR = "submodules/bimg"
 local BX_DIR = "submodules/bx"
 local GLFW_DIR = "submodules/glfw"
+local GLM_DIR = "submodules/glm"
 
 solution "bgfx-minimal-example"
 	location(BUILD_DIR)
@@ -49,7 +50,8 @@ project "aiko"
 		"%{prj.location}",
 		path.join(BGFX_DIR, "include"),
 		path.join(BX_DIR, "include"),
-		path.join(GLFW_DIR, "include")
+		path.join(GLFW_DIR, "include"),
+		path.join(GLM_DIR, "glm")
 	}
 	links { "bgfx", "bimg", "bx", "glfw" }
 	filter "system:windows"
