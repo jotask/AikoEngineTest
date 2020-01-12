@@ -10,7 +10,7 @@ local GLM_DIR = "submodules/glm"
 
 local outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-solution "bgfx-minimal-example"
+solution "AikoEngine"
 	location(BUILD_DIR)
 	startproject "aiko"
 	configurations { "Release", "Debug" }
